@@ -1,0 +1,136 @@
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8"/>
+  <title>ぽんぽこ合戦2017</title>
+  <link rel="stylesheet" href="../css/mystylesheet_info_h.css"/>
+  <link href="https://fonts.googleapis.com/css?family=Pinyon+Script" rel="stylesheet"/>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type="text/javascript" src="../java/javascript_info1.js">
+      </script>
+      <script type="text/javascript" src="../java/javascript_info2.js">
+        </script>
+　　<script type="text/javascript">
+
+kaisuu=1;
+function count(number){
+  var num=document.getElementById("number");
+kaisuu=kaisuu+672;
+num.value=" "+" "+kaisuu+"人";
+}
+  </script>
+  <script type="text/javascript">
+  setTimeout(function() {
+    $('#alert').fadeOut();
+   $('#main_contain').fadeIn('slow')
+   ;}
+  , 1000);
+
+
+    </script>
+
+  <script type="text/javascript">
+
+  jQuery(function($){
+    var n=0;
+  	$(".next1").on('click', function(){
+      n++;
+  		if(n>=3){
+  			$(".fight").show();
+  		}else{
+  			$(".fight").hide();
+  		}
+  	});
+  });
+</script>
+<script type="text/javascript">
+$(function(){
+  $('.a').click(function(){var swap=$(this).attr('src');$(this).attr('src',$(this).attr('lowsrc'));$(this).attr('lowsrc',swap)});
+})
+$(function(){
+  $('.b').click(function(){var swap=$(this).attr('src');$(this).attr('src',$(this).attr('lowsrc'));$(this).attr('lowsrc',swap)});
+})
+$(function(){
+  $('.c').click(function(){var swap=$(this).attr('src');$(this).attr('src',$(this).attr('lowsrc'));$(this).attr('lowsrc',swap)});
+})
+$(function(){
+  $('.fight').mouseover(function(){
+  var swap=$(this).attr('src');$(this).attr('src',$(this).attr('lowsrc'));$(this).attr('lowsrc',swap)
+  });
+})
+$(function(){
+  $('.fight').mouseout(function(){
+  var swap=$(this).attr('lowsrc');$(this).attr('lowsrc',$(this).attr('src'));$(this).attr('src',swap)
+  });
+})
+
+</script>
+</head>
+
+
+<body>
+  <div id="alert">
+    <h1>情報を集めて</h1>
+    <h1>仲間をゲットしよう！</h1>
+  </div>
+  <div id="main_contain">
+    <div id="mi">
+      <h1>情報コーナー</h1>
+      <div class="cou">
+        <img class=n src="../img/h.png">
+<INPUT TYPE="text" NAME="b1" VALUE="　1 人" id="number">
+</div>
+</div>
+<div class="clear">
+  <div>
+  <img class=a src="../img/info_h-a1.png" lowsrc="../img/info_h-a2.png">
+  <img class=b src="../img/info_h-b1.png" lowsrc="../img/info_h-b2.png">
+  <img class=c src="../img/info_h-c1.png" lowsrc="../img/info_h-c2.png">
+
+<div class="guard"></div>
+  <div class="info1" >
+    <h1>大学移転</h1>
+<p>もともと多摩ニュータウンの外周には、中央大学や明星大学、帝京大学、多摩美
+術大学等、1960 年代より大学が進出していた。</p>
+<p>都立大学は立川・八王子への移転
+も候補にいれていたが、土地が狭いなどの理由から、多摩ニュータウン西部地区
+である南大沢に移転が決まった。</p>
+
+  <input class=info_a type="button" value="完了" onclick="cou()">
+  </div>
+  <div class="info2" >
+    <h1>京王バス</h1>
+  <p>京王電鉄バスの路線バスは、八王子市の由木地区も走っている。</p>
+  <p>南大沢駅からは、京王
+  堀之内駅行き、北野駅行き、八王子駅行きなど、様々な地点へ向かってバスが運行されて
+  おり、坂の多いこの地区の交通手段として活躍している。 </p>
+    <input class=info_b type="button" value="完了" onclick="cou()">
+  </div>
+  <div class="info3" >
+    <h1>南大沢アウトレット</h1>
+    <p>南大沢駅を出るとすぐに三井アウトレットパークが現れる。</p>
+    <p>もともとは 2000 年に、
+    「ラ・フェット 多摩南大沢」としてオープン、2008 年に名称を「三井アウトレットパー
+    ク 多摩南大沢」へ改称し現在に至る。アウトレットは車でしか行けない場所に多いが、
+    こちらは南大沢駅からすぐの位置にあり、交通アクセスも良い。休日にはたくさんの客で
+    にぎわっている。</p>
+    <input class=info_c type="button" value="完了" onclick="cou()">
+  </div>
+
+    <div class="nakama">
+      <h1>仲間になりました！</h1>
+      <img class=na src="../img/info_h_a.png" >
+        <img class=nb src="../img/info_h_b.png" >
+          <img class=nc src="../img/info_h_c.png" >
+      <input class=next1 type="button" value="Next" onclick="count()">
+      </div>
+
+       <a href="../html/battle_h.html">
+      <img class="fight" src="../img/f-01.png" lowsrc="../img/f-02.png"></a>
+
+
+  </div><!--end of main_containt-->
+
+</body>
+
+</html>

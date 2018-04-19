@@ -1,0 +1,139 @@
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8"/>
+  <title>ぽんぽこ合戦2017</title>
+  <link rel="stylesheet" href="../css/mystylesheet_info_t.css"/>
+  <link href="https://fonts.googleapis.com/css?family=Pinyon+Script" rel="stylesheet"/>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type="text/javascript" src="../java/javascript_info1.js">
+      </script>
+      <script type="text/javascript" src="../java/javascript_info2.js">
+        </script>
+　　<script type="text/javascript">
+
+kaisuu=1;
+function count(number){
+  var num=document.getElementById("number");
+kaisuu=kaisuu+672;
+num.value=" "+" "+kaisuu+"匹";
+}
+  </script>
+  <script type="text/javascript">
+  setTimeout(function() {
+    $('#alert').fadeOut();
+   $('#main_contain').fadeIn('slow')
+   ;}
+  , 1000);
+
+
+    </script>
+
+  <script type="text/javascript">
+
+  jQuery(function($){
+    var n=0;
+  	$(".next1").on('click', function(){
+      n++;
+  		if(n>=3){
+  			$(".fight").show();
+  		}else{
+  			$(".fight").hide();
+  		}
+  	});
+  });
+</script>
+<script type="text/javascript">
+$(function(){
+  $('.a').click(function(){var swap=$(this).attr('src');$(this).attr('src',$(this).attr('lowsrc'));$(this).attr('lowsrc',swap)});
+})
+$(function(){
+  $('.b').click(function(){var swap=$(this).attr('src');$(this).attr('src',$(this).attr('lowsrc'));$(this).attr('lowsrc',swap)});
+})
+$(function(){
+  $('.c').click(function(){var swap=$(this).attr('src');$(this).attr('src',$(this).attr('lowsrc'));$(this).attr('lowsrc',swap)});
+})
+$(function(){
+  $('.fight').mouseover(function(){
+  var swap=$(this).attr('src');$(this).attr('src',$(this).attr('lowsrc'));$(this).attr('lowsrc',swap)
+  });
+})
+$(function(){
+  $('.fight').mouseout(function(){
+  var swap=$(this).attr('lowsrc');$(this).attr('lowsrc',$(this).attr('src'));$(this).attr('src',swap)
+  });
+})
+
+</script>
+</head>
+
+
+<body>
+  <div id="alert">
+    <h1>情報を集めて</h1>
+    <h1>仲間をゲットしよう！</h1>
+  </div>
+  <div id="main_contain">
+    <div id="mi">
+      <h1>情報コーナー</h1>
+      <div class="cou">
+        <img class=n src="../img/t.png">
+<INPUT TYPE="text" NAME="b1" VALUE="　1 匹" id="number">
+</div>
+</div>
+<div class="clear">
+  <div>
+  <img class=a src="../img/info_t-a1.png" lowsrc="../img/info_t-a2.png">
+  <img class=b src="../img/info_t-b1.png" lowsrc="../img/info_t-b2.png">
+  <img class=c src="../img/info_t-c1.png" lowsrc="../img/info_t-c2.png">
+
+<div class="guard"></div>
+  <div class="info1" >
+    <h1>由木村</h1>
+  <p>東京都南多摩郡由木村は昭和 30 年代まで、豊かな自然に恵まれ、水田、養蚕、わら細
+  工、竹細工などを副業として営みながら、一つの共同体として生活し続けてきた。</p>
+  <p>昭和 39
+  年に八王子市に合併されてしまったが、今でも多くの自然や公園が残っている。</p>
+
+  <input class=info_a type="button" value="完了" onclick="cou()">
+  </div>
+  <div class="info2" >
+  <h1>長沼公園</h1>
+  <p>1980 年に開園した長沼公園は、東京都八王子市長沼町・下柚木に位置する都立公園で
+  ある。八王子八十八景に選ばれている。広葉樹で構成された雑木林が公園を覆ってい
+  る。植物はヤマザクラ・ヤブツバキ・カタクリなどがあり、野鳥としてはシジュ
+  ウカラ・キセキレイ・ジョウビタキなどが見られる。</p>
+
+    <input class=info_b type="button" value="完了" onclick="cou()">
+  </div>
+  <div class="info3" >
+    <h1>長池公園</h1>
+<p>長池公園は 2000 年に東京都八王子市別所二丁目に開園した公園である。</p>
+<p>長池・築池
+(つくいけ)・姿池がある。浄瑠璃姫が薬師如来像を背負って身を投げたという、長池伝説
+が残っている。</p>
+
+    <input class=info_c type="button" value="完了" onclick="cou()">
+  </div>
+
+    <div class="nakama">
+      <h1>仲間になりました！</h1>
+      <img class=na src="../img/info_t_a.png" >
+        <img class=nb src="../img/info_t_b.png" >
+          <img class=nc src="../img/info_t_c.png" >
+      <input class=next1 type="button" value="Next" onclick="count()">
+      </div>
+
+
+       <a href="../html/battle_t.html">
+      <img class="fight" src="../img/f-01.png" lowsrc="../img/f-02.png"></a>
+
+
+  </div><!--end of main_containt-->
+
+
+
+
+</body>
+
+</html>

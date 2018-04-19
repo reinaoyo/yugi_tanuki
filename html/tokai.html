@@ -1,0 +1,85 @@
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8"/>
+  <title>ぽんぽこ合戦2017</title>
+  <link rel="stylesheet" href="../css/mystylesheet_info_h
+  .css"/>
+  <link href="https://fonts.googleapis.com/css?family=Pinyon+Script" rel="stylesheet"/>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type="text/javascript">
+    setTimeout(function() {
+      $('#xxyear').fadeOut('slow')
+     $('#main_contain').fadeIn('slow')
+     ;}
+     ,1000);
+      </script>
+  <script type="text/javascript">
+  setTimeout(function() {
+   $('#select').fadeIn('slow')
+   ;}
+  , 5000);
+    </script>
+<style type="text/css">
+*{
+margin:0;
+padding: 0;
+}
+
+body{
+  text-align: center;
+  font-size:12pt;
+  font-family:"小塚ゴシック Pr6N",sans-serif;
+    /*background-color:#37240f;*/
+   background-color: #ede3cd;
+}
+#xxyear{
+  position: absolute;
+  top:40%;
+  left:40%;
+  z-index:20;
+}
+#xxyear{
+  font-size: 36pt;
+}
+#main_contain{
+  display: none;
+}
+#select{
+  display:none;
+  background-color: #ede3cd;
+    box-shadow: 1px 1px 5px #514454;
+	position:absolute;
+	left:35%;
+	top:70%;
+  width:25%;
+  height:20%;
+}
+.h{position:absolute;
+  bottom:10%;
+  left:20%;
+}
+.f{position:absolute;
+  bottom:10%;
+  right:20%;
+}
+</style>
+</head>
+
+<body>
+  <div id=xxyear>
+    <h1>XX年後…</h1>
+  </div>
+<div id="main_contain">
+  <div class="kai">
+  <img src="../img/kaihatu.png" width="100%">
+</div>
+  <div id="select">
+    <p>人が勝利しました！これからどうする？</p>
+
+    <input class=h type="button" value="たぬきになる" onClick="location.href='../html/information_t.html'">
+    <input class=f type="button" value="おわり" onclick="location.href='../html/fin.html'">
+  </div>
+
+  </div>
+</body>
